@@ -1,0 +1,83 @@
+// buttons style
+.btn {
+  padding: 19px 35px;
+  font-family: $font-secondary;
+  &-sm {
+    padding: 16px 31px;
+  }
+  font-size: $body-text-size;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  color: $color-dark;
+  font-weight: 700;
+  transition: color .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: -2px;
+    left: 0;
+    transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: -1;
+    border-radius: 50px;
+  }
+  &::after {
+    background: rgba($color-primary, .15);
+    transform: scale(.7);
+    opacity: 0;
+  }
+  &::before {
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    @extend .rounded;
+    @extend .border;
+  }
+  &.active,
+  &:hover {
+    color: $black;
+    &::after {
+      transform: scale(1);
+      opacity: 1;
+      border-radius: 16px;
+    }
+    &::before {
+      transform: scaleX(1.05) scaleY(1.1);
+      border-radius: 14px;
+      opacity: 0;
+    }
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: none !important;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    outline: 0;
+    box-shadow: none !important;
+  }
+}
+
+.btn-link {
+  font-family: $font-secondary;
+  @extend .text-dark;
+  display: inline-flex;
+  align-items: flex-start;
+  &:hover {
+    color: $color-primary;
+  }
+  &-alt {
+    text-decoration: none;
+    @extend .text-dark;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &.text-white:hover {
+    color: $white !important;
+  }
+}

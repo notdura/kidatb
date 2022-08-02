@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+
+    <!-- title -->
+    <title>Kida's Portfolio</title>
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="plugins/spinner/spinner.min.css" />
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.custom.min.css" />
+    <link
+      rel="stylesheet"
+      href="plugins/line-awesome/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="plugins/swiper/swiper-bundle.min.css" />
+
+    <!-- main stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="has-noise">
+    <!-- start of scroll-progress -->
+    <div class="scroll-progress position-fixed">
+      <div class="scroll-bar"></div>
+    </div>
+    <!-- end of scroll-progress -->
+
+    <!-- start of cursor -->
+    <div class="cursor"></div>
+    <!-- end of cursor -->
+
+    <!-- start of navigation -->
+    <div class="adjust-navigation-height"></div>
+
+    <header class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md px-0 py-3 py-lg-4">
+              <!-- navbar logo -->
+              <a
+                class="navbar-brand font-weight-bold mb-0"
+                href="index.html"
+                title="Kida"
+              >
+                <!-- <img src="assets/images/logo.png" alt="Mogen"> -->Kida
+              </a>
+
+              <!-- navbar-toggler -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="navbar-menu"
+                aria-label="navigation"
+              >
+                <svg viewBox="0 0 341.333 341.333">
+                  <g>
+                    <g><rect y="277.333" width="341.333" height="42.667" /></g>
+                  </g>
+                  <g>
+                    <g><rect y="149.333" width="341.333" height="42.667" /></g>
+                  </g>
+                  <g>
+                    <g><rect y="21.333" width="341.333" height="42.667" /></g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </button>
+
+              <!-- navbar links -->
+              <div class="navbar-collapse" id="navbar-menu">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav mt-3 mt-md-0">
+                  <li class="nav-item">
+                    <a class="btn btn-sm" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of navigation -->
+
+    <!-- default preloader -->
+    <div class="preloader">
+      <div
+        class="loader fixed-top w-100 h-100 d-flex align-items-center justify-content-center bg-light"
+      >
+        <svg class="spinner" viewBox="0 0 50 50">
+          <circle
+            class="path"
+            cx="25"
+            cy="25"
+            r="20"
+            fill="none"
+            stroke-width="2"
+          ></circle>
+        </svg>
+      </div>
+    </div>
+    <!-- end of navigation -->
+
+    <section data-barba="wrapper">
+      <main data-barba="container" data-barba-namespace="loader">
+        <!-- start of loader -->
+        <div
+          class="loader fixed-top w-100 h-100 d-flex align-items-center justify-content-center bg-light"
+        >
+          <svg class="spinner" viewBox="0 0 50 50">
+            <circle
+              class="path"
+              cx="25"
+              cy="25"
+              r="20"
+              fill="none"
+              stroke-width="2"
+            ></circle>
+          </svg>
+        </div>
+        <!-- end of loader -->
+
+        <div class="content-block">
+          <!-- start of page-header -->
+          <div class="page-header section position-relative">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <div class="text-center">
+                    <p class="small text-uppercase mb-4">Brand & Design</p>
+                    <div class="section-title text-center">
+                      <h1 class="title">My Skills</h1>
+                    </div>
+                  </div>
+
+                  <div class="rotate-circle">
+                    <svg
+                      class="rotateOnScroll circle-text bg-dark"
+                      viewBox="0 0 460 460"
+                    >
+                      <defs>
+                        <path
+                          id="circle-button-text"
+                          d="M230,380 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+                        ></path>
+                      </defs>
+                      <text
+                        class="text-uppercase"
+                        style="font-size: 40px; letter-spacing: 7px"
+                      >
+                        <textPath fill="white" href="#circle-button-text">
+                          What I enjoy working with -----
+                        </textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of page-header -->
+
+          <!-- start of services -->
+          <section class="section bg-light-soft adjust-rotate-circle-spacing">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <div class="row justify-content-center g-5">
+                    <!-- service-item -->
+                    <div class="col-lg-4 col-md-6">
+                      <div class="rounded-sm px-4 px-sm-5 py-5 bg-white h-100">
+                        <svg
+                          class="text-black"
+                          width="40"
+                          height="40"
+                          stroke-width="1"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3 7.4V3.6C3 3.26863 3.26863 3 3.6 3H9.4C9.73137 3 10 3.26863 10 3.6V7.4C10 7.73137 9.73137 8 9.4 8H3.6C3.26863 8 3 7.73137 3 7.4Z"
+                            stroke="currentColor"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M14 20.4V16.6C14 16.2686 14.2686 16 14.6 16H20.4C20.7314 16 21 16.2686 21 16.6V20.4C21 20.7314 20.7314 21 20.4 21H14.6C14.2686 21 14 20.7314 14 20.4Z"
+                            stroke="currentColor"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M14 12.4V3.6C14 3.26863 14.2686 3 14.6 3H20.4C20.7314 3 21 3.26863 21 3.6V12.4C21 12.7314 20.7314 13 20.4 13H14.6C14.2686 13 14 12.7314 14 12.4Z"
+                            stroke="currentColor"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M3 20.4V11.6C3 11.2686 3.26863 11 3.6 11H9.4C9.73137 11 10 11.2686 10 11.6V20.4C10 20.7314 9.73137 21 9.4 21H3.6C3.26863 21 3 20.7314 3 20.4Z"
+                            stroke="currentColor"
+                            stroke-width="1"
+                          />
+                        </svg>
+                        <h3 class="mt-4 mb-2 h4">UX & UI Design</h3>
+                        <p>
+                          UI/UX Design generally refers to the visual layout of
+                          the elements.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- service-item -->
+                    <div class="col-lg-4 col-md-6">
+                      <div class="rounded-sm px-4 px-sm-5 py-5 bg-white h-100">
+                        <svg
+                          class="text-black"
+                          width="40"
+                          height="40"
+                          stroke-width="1"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3 9.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6V9.4C21 9.73137 20.7314 10 20.4 10H3.6C3.26863 10 3 9.73137 3 9.4Z"
+                            stroke="currentColor"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M14 20.4V14.6C14 14.2686 14.2686 14 14.6 14H20.4C20.7314 14 21 14.2686 21 14.6V20.4C21 20.7314 20.7314 21 20.4 21H14.6C14.2686 21 14 20.7314 14 20.4Z"
+                            stroke="currentColor"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M3 20.4V14.6C3 14.2686 3.26863 14 3.6 14H9.4C9.73137 14 10 14.2686 10 14.6V20.4C10 20.7314 9.73137 21 9.4 21H3.6C3.26863 21 3 20.7314 3 20.4Z"
+                            stroke="currentColor"
+                            stroke-width="1"
+                          />
+                        </svg>
+                        <h3 class="mt-4 mb-2 h4">UX Research</h3>
+                        <p>
+                          On the web, front-end code tells our browser what to
+                          do & not to do.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- service-item -->
+                    <div class="col-lg-4 col-md-6">
+                      <div class="rounded-sm px-4 px-sm-5 py-5 bg-white h-100">
+                        <svg
+                          class="text-black"
+                          width="40"
+                          height="40"
+                          stroke-width="1"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12 16.01L12.01 15.9989"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7 19.4V4.6C7 4.26863 7.26863 4 7.6 4H16.4C16.7314 4 17 4.26863 17 4.6V19.4C17 19.7314 16.7314 20 16.4 20H7.6C7.26863 20 7 19.7314 7 19.4Z"
+                            stroke="currentColor"
+                            stroke-width="1"
+                          />
+                        </svg>
+                        <h3 class="mt-4 mb-2 h4">
+                          Responsive & Accessible Design
+                        </h3>
+                        <p>
+                          App design combines the user interface (UI) and user
+                          experience (UX).
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- service-item -->
+                    <div class="col-lg-6 col-md-6">
+                      <div class="rounded-sm px-4 px-sm-5 py-5 bg-white h-100">
+                        <svg
+                          class="text-black"
+                          width="40"
+                          height="40"
+                          stroke-width="1"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M8 21.1679V14L12 7L16 14V21.1679"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M8 14C8 14 9.12676 15 10 15C10.8732 15 12 14 12 14C12 14 13.1268 15 14 15C14.8732 15 16 14 16 14"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <h3 class="mt-4 mb-2 h4">Graphic Design</h3>
+                        <p>
+                          Graphic design is a craft where professionals create
+                          visual content to communicate messages.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- service-item -->
+                    <div class="col-lg-6 col-md-12">
+                      <div class="rounded-sm px-4 px-sm-5 py-5 bg-white h-100">
+                        <svg
+                          class="text-black"
+                          width="40"
+                          height="40"
+                          stroke-width="1"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14 14V6M14 14L20.1023 17.487C20.5023 17.7156 21 17.4268 21 16.9661V3.03391C21 2.57321 20.5023 2.28439 20.1023 2.51296L14 6M14 14H7C4.79086 14 3 12.2091 3 10V10C3 7.79086 4.79086 6 7 6H14"
+                            stroke="currentColor"
+                            stroke-width="1"
+                          />
+                          <path
+                            d="M7.75716 19.3001L7 14H11L11.6772 18.7401C11.8476 19.9329 10.922 21 9.71716 21C8.73186 21 7.8965 20.2755 7.75716 19.3001Z"
+                            stroke="currentColor"
+                            stroke-width="1"
+                          />
+                        </svg>
+                        <h3 class="mt-4 mb-2 h4">Branding</h3>
+                        <p>
+                          A brand is a name or any other feature that identifies
+                          one seller's good or service as distinct from those of
+                          other sellers.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end of services -->
+
+          <!-- start of FAQ -->
+          <section class="section">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <div class="section-title mb-6">
+                    <h2 class="title">Frequently Asked Questions</h2>
+                  </div>
+
+                  <div class="row g-5">
+                    <div class="col-12">
+                      <h5 class="font-tertiary mb-2">
+                        Do you offer payment plans?
+                      </h5>
+                      <p>
+                        Yes. Payment is broken up into 3-4 installments usually
+                        but can be tailored to the client’s needs.
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <h5 class="font-tertiary mb-2">Can I just get a Logo?</h5>
+                      <p>
+                        No, it doesn’t really provide the transformation that I
+                        am wanting to offer my clients. A transformed brand
+                        presence is rooted in clarity and revelation which
+                        requires a lot more groundwork. The logo alone can’t
+                        convey the tone and personality across all their
+                        touchpoints either.
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <h5 class="font-tertiary mb-2">How much does it cost?</h5>
+                      <p>
+                        Every package is unique, which reflects in the varying
+                        cost per project. The majority of projects are located
+                        in the 4.5-10k bracket. Depending on the scope the cost
+                        can increase, especially when other services like
+                        photography, copywriting etc are required. All prices
+                        are in GBP.
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <h5 class="font-tertiary mb-2">How long does it take?</h5>
+                      <p>
+                        Branding projects typically take 10-16 weeks. Depending
+                        on the scope, projects may take longer. Taking our time
+                        is important to marinate the ideas so we try to keep a
+                        steady but unhurried pace.
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <h5 class="font-tertiary mb-2">
+                        Do you work with someone who has an existing brand
+                        identity?
+                      </h5>
+                      <p>
+                        In short, yes! For brands who have existing and sound
+                        identities and strategies in place, we can create
+                        websites or even design materials to build on the work
+                        that’s already done.
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <hr class="mt-0 mb-5" />
+                      <p class="font-secondary">
+                        Can’t find the answer? Drop me an email at
+                        <a class="btn-link" href="mailto:hello@mogen.io"
+                          >hello@mogen.io</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end of FAQ -->
+
+          <!-- start of cta -->
+          <section class="section bg-light-soft">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                  <p class="small text-uppercase mb-4">Do you like my work?</p>
+                  <div class="section-title text-center">
+                    <h2 class="title">
+                      Let’s make a wonderful <br />
+                      <span class="text-primary loop-text text-underline"
+                        ><span>website</span><span>experience</span
+                        ><span>direction</span><span>strategy</span></span
+                      >
+                      together!
+                    </h2>
+                  </div>
+                  <a class="btn mt-6" href="contact.html">Get in touch!</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end of cta -->
+
+          <!-- start of footer -->
+          <footer>
+            <div class="container bg-light-soft">
+              <div
+                class="block"
+                style="background-image: url(assets/images/footer-bg.jpg)"
+              >
+                <div class="row gx-0 gx-md-4 gy-4 justify-content-center">
+                  <div
+                    class="col-lg-5 text-center text-lg-start order-1 order-lg-0"
+                  >
+                    <ul class="list-inline mb-3">
+                      <li class="list-inline-item">
+                        <a
+                          class="text-hover-underline-initial text-white"
+                          href="#!"
+                          >Facebook</a
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          class="text-hover-underline-initial text-white"
+                          href="#!"
+                          >Twitter</a
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          class="text-hover-underline-initial text-white"
+                          href="#!"
+                          >Instagram</a
+                        >
+                      </li>
+                    </ul>
+                    <p class="small">&copy; Copyright, Riazz Mogen</p>
+                  </div>
+                  <div
+                    class="col-lg-5 text-center text-lg-end order-0 order-lg-1"
+                  >
+                    <ul class="list-inline mb-3">
+                      <li class="list-inline-item">
+                        <a
+                          class="text-hover-underline-initial text-white"
+                          href="about.html"
+                          >About</a
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          class="text-hover-underline-initial text-white"
+                          href="services.html"
+                          >Services</a
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          class="text-hover-underline-initial text-white"
+                          href="projects.html"
+                          >Projects</a
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          class="text-hover-underline-initial text-white"
+                          href="blog.html"
+                          >Blog</a
+                        >
+                      </li>
+                    </ul>
+                    <p class="small">
+                      Contact at
+                      <a
+                        class="btn-link text-white"
+                        href="mailto:hello@mogen.io"
+                        >hello@mogen.io</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- end of footer -->
+        </div>
+      </main>
+    </section>
+
+    <!-- JS files -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="plugins/barba/barba.umd.js"></script>
+    <script src="plugins/barba/barba-css.umd.js"></script>
+
+    <!-- Main Script -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+// navbar brand/logo style
+.navbar-brand {
+  color: $color-dark !important;
+  font-size: 30px;
+  p {
+    font-size: 32px;
+    padding-top: 5px;
+  }
+}
+
+// navbar toggler style
+.navbar-toggler {
+  border: 0;
+  outline: 0 !important;
+  padding: 5px;
+  margin-right: -5px;
+  svg {
+    height: 22px;
+    width: 22px;
+    fill: $black;
+    transition: opacity .3s;
+  }
+  &:hover svg {
+    opacity: .7;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+// navigation style
+.adjust-navigation-height {
+  height: 106px;
+  @include desktop {
+    height: 90px;
+  }
+}
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9992;
+  transition: background-color 0.25s, transform .5s cubic-bezier(.2,1,.2,1), -webkit-transform .5s cubic-bezier(.2,1,.2,1);
+  will-change: transform;
+  font-family: $font-secondary;
+  &.header-scrollable {
+    background-color: rgba($white, .9);
+    backdrop-filter: blur(5px);
+  }
+  &.header-unpinned {
+    transform: translateY(-100%);
+    .navbar-collapse {
+      top: 106px !important;
+      @include desktop {
+        top: 90px !important;
+      }
+    }
+  }
+  .nav-item {
+    .nav-link {
+      padding: 14px 20px;
+      margin: 0 2px;
+      display: inline-block;
+      @include desktop {
+        padding: 14px 12px;
+      }
+      @include tablet {
+        margin: 0;
+        padding: 14px 22px;
+      }
+      font-size: $body-text-size;
+      line-height: 1;
+      position: relative;
+      z-index: 1;
+      color: $color-dark;
+      font-weight: 700;
+      transition: color .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: -1px;
+        left: 0;
+        transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        background: rgba($color-primary, .15);
+        transform: scale(.7);
+        opacity: 0;
+        z-index: -1;
+        border-radius: 50px;
+      }
+      &:hover {
+        color: $black;
+        &::after {
+          transform: scale(1);
+          opacity: 1;
+          border-radius: 16px;
+        }
+      }
+    }
+  }
+
+  @include tablet {
+    .navbar-collapse {
+      position: fixed;
+      top: 94px;
+      right: 0;
+      width: 100%;
+      height: calc(100vh - 94px);
+      background-color: rgba($white, .97);
+      backdrop-filter: blur(5px);
+      padding-bottom: 60px;
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: opacity 0.3s, visibility 0.5s;
+      .navbar-nav {
+        max-width: 280px;
+        margin: 0 auto;
+        text-align: center;
+        transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        &:nth-child(1) {
+          transform: translateX(-20px);
+        }
+        &:nth-child(2) {
+          transform: translateX(20px);
+        }
+        li {
+          display: block;
+        }
+      }
+      &.visible {
+        opacity: 1;
+        visibility: visible;
+        .navbar-nav {
+          transform: translate(0);
+        }
+      }
+    }
+  }
+}
