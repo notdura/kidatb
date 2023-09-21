@@ -617,6 +617,10 @@ main .loader {
   list-style-position: inside;
 }
 
+.content ol ol,
+.content ol ul {
+  padding-left: 30px;
+}
 .content ol li:not(:last-child) {
   margin-bottom: 7px !important;
 }
@@ -1428,13 +1432,13 @@ input[type="range"]::-webkit-slider-thumb {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 100%;
-  border: 2px solid #7DA781;
+  border: 2px solid #7da781;
 }
 input[type="range"]::-moz-range-thumb {
   -moz-appearance: none;
   width: 20px;
   height: 15px;
-  background:  rgb(28, 85, 44);
+  background: rgb(28, 85, 44);
   border-radius: 0;
 }
 input[type="range"]:focus::-webkit-slider-thumb {
