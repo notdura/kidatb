@@ -1139,19 +1139,21 @@ footer::after {
   transform: scale(0);
 }
 
-.project-block .project-content:hover {
+.project-block:hover .project-content {
   opacity: 0.9;
 }
 
-.project-block .project-content:hover .icon {
+.project-block:hover .project-content .icon {
   transform: rotate(-45deg);
 }
 
-.project-block .project-content:hover .icon svg #Werk-1 {
-  fill: #fff;
+.project-block:hover .project-content .icon svg {
+  fill: #fff!important;
+  color: white; 
+  stroke: white;
 }
 
-.project-block .project-content:hover .icon::after {
+.project-block:hover .project-content .icon::after {
   transform: scale(1);
   background-color: #000;
   transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
