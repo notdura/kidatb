@@ -1148,8 +1148,8 @@ footer::after {
 }
 
 .project-block:hover .project-content .icon svg {
-  fill: #fff!important;
-  color: white; 
+  fill: #fff !important;
+  color: white;
   stroke: white;
 }
 
@@ -1159,16 +1159,25 @@ footer::after {
   transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-#galleryContainer{
+#galleryContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-
+  align-items: center;
 }
 
 .galleryImageWrapper {
-  flex: 0 0 40%;
+  flex: 0 0 33%;
+  margin: auto;
+}
+
+.galleryImageWrapper img {
+  flex: 1; /* Distribute the available space evenly among the images */
+  margin: 5px; /* Add some margin between images */
+  max-width: 300px; /* Set a maximum width for the images */
+  max-height: 300px; /* Set a maximum height for the images */
+  object-fit: contain; /* Maintain aspect ratio while covering the container */
 }
 
 .swiper-projects-section {
