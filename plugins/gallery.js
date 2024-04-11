@@ -16,10 +16,18 @@ function fetchImages() {
 
       // Display the images
       absoluteImageLinks.forEach((imageUrl) => {
+        // Create div element to wrap image
+        const divElement = document.createElement("div");
+        divElement.classList.add("galleryImageWrapper");
+
         const imgElement = document.createElement("img");
         imgElement.src = imageUrl;
         imgElement.classList.add("w-100");
-        document.getElementById("imageContainer").appendChild(imgElement);
+        document.getElementById("galleryContainer").appendChild(imgElement);
+        // Append image to div
+        divElement.appendChild(imgElement);
+        // Append div to container
+        document.getElementById("galleryContainer").appendChild(divElement);
       });
     })
     .catch((error) => {

@@ -1159,6 +1159,18 @@ footer::after {
   transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+#galleryContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.galleryImageWrapper {
+  flex: 0 0 40%;
+}
+
 .swiper-projects-section {
   max-width: 2160px;
   overflow: hidden;
