@@ -1164,7 +1164,7 @@ footer::after {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .galleryImageWrapper {
@@ -1175,8 +1175,8 @@ footer::after {
 .galleryImageWrapper img {
   flex: 1; /* Distribute the available space evenly among the images */
   margin: 5px; /* Add some margin between images */
-  max-width: 300px; /* Set a maximum width for the images */
-  max-height: 300px; /* Set a maximum height for the images */
+  max-width: 400px; /* Set a maximum width for the images */
+  /* max-height: 500px; Set a maximum height for the images */
   object-fit: contain; /* Maintain aspect ratio while covering the container */
 }
 

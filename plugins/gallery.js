@@ -47,7 +47,7 @@ function fetchImages(folders) {
 }
 
 // Specify the folders containing images
-const folders = ["others", "long", "wide"];
+const folders = ["wide", "long"];
 
 // Call fetchImages function with the list of folders
 fetchImages(folders);
