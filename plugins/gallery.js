@@ -1,7 +1,7 @@
 function fetchImages(folders) {
   // Iterate through each folder
   folders.forEach((folder) => {
-    fetch(`assets/images/gallery/${folder}`) // Path to each image folder
+    fetch(`main/assets/images/gallery/${folder}`) // Path to each image folder
       .then((response) => response.text())
       .then((data) => {
         // Parse the HTML response to extract image URLs
