@@ -1168,7 +1168,6 @@ footer::after {
 }
 
 .galleryImageWrapper {
-  flex: 0 0 33%;
   margin: auto;
 }
 

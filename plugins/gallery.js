@@ -106,7 +106,6 @@ const folderData = [
     filenames: [
       "114856-nyxLogo.jpg",
       "115069-nyxLogoAlt.jpg",
-      "RemodeDeck-min.jpg",
       "700236-Desktop.png",
       "764003-New-thumbnail.png",
       "845645-towards_startup1-â-3.png",
@@ -116,6 +115,7 @@ const folderData = [
       "271220-linkedin-size.png",
       "279448-bantabaFlyers.jpg",
       "603662-christina-wocintechchat-com-c6wbSBaYxkY-unsplash.png",
+      "RemodeDeck-min.jpg",
     ],
   },
   // Add more folder objects as needed
