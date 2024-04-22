@@ -104,13 +104,14 @@ const folderData = [
   {
     folder: "wide",
     filenames: [
+      "114856-nyxLogo.jpg",
+      "115069-nyxLogoAlt.jpg",
+      "RemodeDeck-min.jpg",
       "700236-Desktop.png",
       "764003-New-thumbnail.png",
       "845645-towards_startup1-â-3.png",
       "890602-linked-alt.png",
       "959853-Pierre-Event.png",
-      "114856-nyxLogo.jpg",
-      "115069-nyxLogoAlt.jpg",
       "158207-TreeNMockup.jpg",
       "271220-linkedin-size.png",
       "279448-bantabaFlyers.jpg",
