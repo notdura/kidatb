@@ -209,3 +209,50 @@ var divisor = document.getElementById("divisor"),
 function moveDivisor() {
   divisor.style.width = slider.value + "%";
 }
+// Ensure barba.js initializes after the page loads.
+$(document).ready(function () {
+  // Initialize barba.js transitions
+  barba.use(barbaCss);
+  barba.init({
+    transitions: [
+      {
+        name: "loader-entry",
+        beforeOnce() {},
+        once() {},
+        afterOnce() {},
+      },
+      {
+        name: "loader",
+        to: { namespace: ["loader"] },
+        leave() {},
+        enter() {},
+      },
+      {
+        name: "single",
+        to: { namespace: ["single"] },
+        leave() {},
+        enter() {},
+      },
+    ],
+  });
+
+  // Additional hooks or after-transition reinitializations
+  barba.hooks.enter(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  });
+
+  // Re-initialize certain functions after page transitions
+  barba.hooks.after(() => {
+    o(); // Sticky Header
+    t(); // Navbar Menu Toggle
+    a(); // Swiper Carousel Setup
+    s(); // Background Color Change
+    e(); // Custom Cursor
+    r(); // Looped Text Animation
+    i(); // Placeholder Handling
+  });
+});
