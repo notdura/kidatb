@@ -570,10 +570,10 @@ main .loader {
   overflow-wrap: break-word;
 }
 
-.content :not(.row > *),
+/* .content :not(.row > *),
 .content :not(:last-child) {
   margin-bottom: 15px;
-}
+} */
 
 .content :first-child {
   margin-top: 0 !important;
