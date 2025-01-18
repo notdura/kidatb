@@ -256,3 +256,56 @@ $(document).ready(function () {
     i(); // Placeholder Handling
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".carousel-item");
+  const dots = document.querySelectorAll(".dot");
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    // Hide all slides and deactivate dots
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      dots[i].classList.remove("active");
+    });
+
+    // Show the selected slide and activate corresponding dot
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  // Add event listeners to dots for manual control
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      currentIndex = index;
+      showSlide(currentIndex);
+    });
+  });
+
+  // Optional: Auto-slide every 5 seconds
+  setInterval(nextSlide, 5000);
+
+  // Show the first slide on load
+  showSlide(currentIndex);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    speed: 500,
+    loop: true,
+    cssMode: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+});

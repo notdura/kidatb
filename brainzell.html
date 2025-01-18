@@ -26,6 +26,8 @@
     <!-- main stylesheet -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+
     <script type="text/javascript">
       (function (c, l, a, r, i, t, y) {
         c[a] =
@@ -39,6 +41,23 @@
         y = l.getElementsByTagName(r)[0];
         y.parentNode.insertBefore(t, y);
       })(window, document, "clarity", "script", "lwhw1mxzhf");
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".swiper-container", {
+          slidesPerView: 3,
+          speed: 500,
+          loop: true,
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      });
     </script>
   </head>
 
@@ -243,10 +262,10 @@
                       <p>
                         BrainZell is a biotech startup which grows
                         <b>mini brains</b> from human stem cells for research
-                        purposes. These organoids are subsequently infected with
+                        purposes. These organoids are then infected with
                         diseases, allowing BrainZell to test and identify
                         potential new treatments. This process replaces animal
-                        testing, promoting a more sustainable method for
+                        testing and promotes a more sustainable method for
                         <b>medicine discovery</b>.
                       </p>
                     </div>
@@ -254,11 +273,20 @@
                       <h4 class="mb-2">
                         <strong>SETTING THE FOUNDATION</strong>
                       </h4>
-                      <p>
+                      <p class="mb-2">
                         As a startup in its early days, BrainZell had a very
-                        basic website. It lacked the depth, visuals, and
-                        structure needed to resonate with their target
+                        basic website.
+                        <strong>
+                          It lacked the depth, visuals, and structure </strong
+                        >needed to resonate with their target
                         audience—investors.
+                      </p>
+                      <p>
+                        My role as the sole designer entailed creating a website
+                        that would build credibility, inspire trust, and
+                        highlight the BrainZell's innovative mission. In just
+                        three months, I created a 5-page website that showcased
+                        BrainZell's amazing achievements and potential.
                       </p>
                     </div>
                     <div class="mb-5">
@@ -423,6 +451,56 @@
                         </li>
                       </ul>
                     </div>
+
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        ...
+                      </div>
+                      <!-- If we need pagination -->
+                      <div class="swiper-pagination"></div>
+
+                      <!-- If we need navigation buttons -->
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+
+                      <!-- If we need scrollbar -->
+                      <div class="swiper-scrollbar"></div>
+                    </div>
+
+                    <div class="flexrow" style="gap: 24px">
+                      <div class="col-lg-6">
+                        <!-- <img
+                            class="w-100 rounded mb-0"
+                            loading="lazy"
+                            src="assets/images/projects/cnbio.png"
+                            alt="A big tree is in the center. People are gathered in a circle around it, talking."
+                          /> -->
+                        <!-- <img
+                          class="w-100 rounded mb-0"
+                          loading="lazy"
+                          src="assets/images/projects/nld.png" 
+                          alt="A big tree is in the center. People are gathered in a circle around it, talking."
+                        /> -->
+                      </div>
+                      <div>
+                        <h6 class="m-0">
+                          Things I learned from the competitors:
+                        </h6>
+                        <h3 class="m-2">Strengths to incorporate</h3>
+                        <ol>
+                          <li>Strong Branding and Consistent Design</li>
+                          <li>Minimalistic Design</li>
+                          <li>Appealing Images</li>
+                        </ol>
+                      </div>
+                    </div>
+
                     <div class="mb-5">
                       <h4 class="mb-2">
                         <strong>BUILDING THE ROADMAP</strong>
