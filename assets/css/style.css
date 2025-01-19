@@ -19,6 +19,17 @@ p {
   font-size: 18px;
 }
 
+.mobileColumnReverse {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 767px) {
+  .mobileColumnReverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .flexrow {
   display: flex;
   flex-direction: row;
@@ -1185,7 +1196,23 @@ footer::after {
   margin-left: auto;
   margin-right: auto;
 }
-
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+  /* top: 92%; */
+  --swiper-navigation-size: 20px;
+  --swiper-navigation-top-offset: 90%;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  width: auto;
+  max-width: 200px;
+  margin-bottom: 15px;
+  left: 40%;
+  right: 40%;
+}
 .swiper-projects {
   overflow: initial;
   margin-bottom: 100px;
