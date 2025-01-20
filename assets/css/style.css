@@ -57,7 +57,7 @@ p {
   }
 
   .swiperWithText.mobileColumnReverse {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
   }
 }
 
@@ -809,6 +809,13 @@ footer::after {
   background-color: rgba(223, 241, 223, 0.3) !important;
 }
 
+.col.border-end{ 
+  border-right:  1px solid rgba(139, 147, 139, 0.617) !important;
+}
+.rounded-pill.bg-light {
+  background-color: rgba(178, 196, 178, 0.375)!important;
+}
+
 .text-hover-underline-initial:hover,
 .text-underline-initial {
   text-decoration: underline;
@@ -1207,9 +1214,8 @@ footer::after {
 
 .galleryImageWrapper img {
   flex: 1; /* Distribute the available space evenly among the images */
-  margin: 5px; /* Add some margin between images */
-  max-width: 400px; /* Set a maximum width for the images */
-  /* max-height: 500px; Set a maximum height for the images */
+  margin: 5px; 
+  max-width: 400px; 
   object-fit: contain; /* Maintain aspect ratio while covering the container */
 }
 
@@ -1221,11 +1227,15 @@ footer::after {
 }
 .swiper-button-next,
 .swiper-button-prev {
-  color: #000;
-  /* top: 92%; */
+  color: #57a75b;
+  top: 90%;
   --swiper-navigation-size: 20px;
   --swiper-navigation-top-offset: 90%;
 }
+.swiper-pagination-bullet-active {
+  background: #57a75b;
+}
+
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
