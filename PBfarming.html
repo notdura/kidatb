@@ -524,6 +524,89 @@
                           </li>
                         </ul>
                       </div>
+                      <!-- <section>
+                        <div>
+                          <div class="mb-4">
+                            <h2 class="h4 mb-2">What Users Are Saying</h2>
+                            <p class="mb-0">
+                              Some feedback we’ve received during testing and
+                              development.
+                            </p>
+                          </div>
+
+                          < !- - Swiper - ->
+                          <div class="swiper testimonialSwiper">
+                            <div class="swiper-wrapper">
+                              <!- - Slide 1 - ->
+                              <div class="swiper-slide">
+                                <div class="border p-3 h-100 rounded">
+                                  <p class="mb-3">
+                                    “The farming UI is super intuitive — I
+                                    didn’t even need a guide.”
+                                  </p>
+                                  <p class="mb-0 text-secondary">
+                                    —
+                                    <span class="fw-semibold"
+                                      >Alpha Tester</span
+                                    >
+                                  </p>
+                                </div>
+                              </div>
+
+                              <!- - Slide 2 - ->
+                              <div class="swiper-slide">
+                                <div class="border p-3 h-100 rounded">
+                                  <p class="mb-3">
+                                    “Loved the visual feedback for growth. It’s
+                                    both cute and clear.”
+                                  </p>
+                                  <p class="mb-0 text-secondary">
+                                    —
+                                    <span class="fw-semibold">Beta Player</span>
+                                  </p>
+                                </div>
+                              </div>
+
+                              <!- - Slide 3 - ->
+                              <div class="swiper-slide">
+                                <div class="border p-3 h-100 rounded">
+                                  <p class="mb-3">
+                                    “The husbandry system felt like a natural
+                                    extension of the farm — really smooth.”
+                                  </p>
+                                  <p class="mb-0 text-secondary">
+                                    —
+                                    <span class="fw-semibold"
+                                      >Closed Tester</span
+                                    >
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              class="d-flex justify-content-center align-items-center gap-4 mt-3"
+                            >
+                              <div
+                                class="swiper-button-prev"
+                                style="color: green; bottom: 0"
+                              ></div>
+                              <div
+                                class="swiper-pagination"
+                                style="
+                                  bottom: 0;
+                                  margin-bottom: 0;
+                                  position: static;
+                                "
+                              ></div>
+                              <div
+                                class="swiper-button-next"
+                                style="color: green; margin-top: 0; bottom: 0"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </section> -->
                     </div>
                   </div>
                 </div>
@@ -774,6 +857,33 @@
         a11y: {
           prevSlideMessage: "Previous slide",
           nextSlideMessage: "Next slide",
+        },
+      });
+
+      var swiper = new Swiper(".testimonialSwiper", {
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
         },
       });
     </script>
